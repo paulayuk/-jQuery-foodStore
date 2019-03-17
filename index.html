@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Food Store</title>
+   
+       
+         <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.1.220/styles/kendo.common.min.css">
+          <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.1.220/styles/kendo.rtl.min.css">
+          <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.1.220/styles/kendo.default.min.css">
+          <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.1.220/styles/kendo.mobile.all.min.css">
+          <link rel="stylesheet" href="css/store.css">
+        
+          <script src="https://kendo.cdn.telerik.com/2019.1.220/js/kendo.all.min.js"></script>
+         <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+       
+  </head>
+  
+  <body>
+      <main>
+  		  <header>
+          <nav class="navbar navbar-light bg-light justify-content-between">
+            <a class="navbar-brand">Food Store</a>	    
+    		    <div id="cart-container">
+    		      <div id="cart">
+    		        <i class="fa fa-shopping-cart  openCloseCart" aria-hidden="true">cart</i>
+                <p class="p-2">
+                  <i class="fas fa-trash-alt"  id="emptyCart">Empty cart</i>
+                </p>
+    		      </div>
+  		      <span id="itemCount"></span>
+  		    </div>
+        </nav>
+  		  </header>
+
+  		  <div id="shoppingCart">
+  		    <div id="cartItemsContainer">
+  		      <h2>Items in your cart</h2>
+  		      <i class="fa fa-times-circle-o fa-3x openCloseCart" aria-hidden="true"></i>
+  		      <div id="cartItems"></div>
+  		      <span id="cartTotal"></span>
+  		  	</div>
+  		  </div>
+
+  		 <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="https://images.pexels.com/photos/723198/pexels-photo-723198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Rice </h5>
+              <p class="card-text price">Price: $10.00</p>
+              <a href="#" id="showPopupNotification" class="add btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="https://images.pexels.com/photos/236812/pexels-photo-236812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Eggs</h5>
+              <p class="card-text price">Price: $5.00</p>
+              <a href="#" id="showPopupNotification" class="add btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+       <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top" src="https://images.pexels.com/photos/264537/pexels-photo-264537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Vegatables</h5>
+                <p class="card-text price">Price: $20</p>
+                <a href="#" id="showPopupNotification" class="add btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+       </div>
+       <span id="popupNotification"></span>
+      		 
+		</main>
+   <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script src="js/store.js"></script>
+
+  </body>
+</html>
